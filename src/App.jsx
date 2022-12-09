@@ -1,34 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import NavBar from './components/NavBar';
+import About from './pages/About';
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Skills from './pages/Skills';
+import { changePage } from './store/slices/infoState.slice';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const infoState = useSelector(state => state.infoState);
+  const dispatch = useDispatch();
+  const pageVisibility = 'visible';
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark')
+  }
+
+  function renderInfo() {
+    switch (infoState) {
+      case 'about':
+        return (<About pageVisibility={pageVisibility} />)
+      case 'skills':
+        return (<Skills pageVisibility={pageVisibility} />)
+      case 'projects':
+        return (<Projects pageVisibility={pageVisibility} />)
+      case 'contact':
+        return (<Contact pageVisibility={pageVisibility} />)
+      default:
+        return (<Home pageVisibility={pageVisibility} />)
+    }
+  }
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <NavBar />
+      {renderInfo()}
     </div>
   )
 }
 
 export default App
+

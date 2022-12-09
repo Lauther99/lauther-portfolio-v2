@@ -1,41 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    --main-color: hsl(217, 78%, 60%);
+    --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 21%);
+    --card-color: hsl(0, 0%, 90%);
+    --text-color-normal: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 55%);
+    --text-color-darky: hsl(0, 0%, 15%);
+    --main-body-color: hsl(206, 4%, 97%);
+    --alternate-body-color: #eee;
+    --container-color-normal: #fff;
+    --container-color-alternate: #eee;
+    --border-color: hsl(0, 0%, 35%);
+    /*========== Font and typography ==========*/
+    --body-font: 'League Spartan', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/*========== Variables Dark theme ==========*/
+/*
+    --main-color: hsl(182, 53%, 74%);
+    --button-color: hsl(246, 16%, 12%);
+    --button-color-alt: hsl(0, 0%, 28%);
+    --card-color: hsla(246, 16%, 5%, .5);
+    --title-color: hsl(0, 0%, 95%);
+    --text-color: hsl(0, 0%, 75%);
+    --body-color: hsl(249, 19%, 14%);
+    --container-color-alternate: hsl(246, 16%, 12%);
+    --border-color: hsl(0, 0%, 20%);
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html {
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+    min-height: 100vh;
+    padding: 1.5rem;
+    background-color: var(--main-body-color);
+    /* *** Sunny mode colors *** */
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+    overflow: hidden;
 }
 
-.card {
-  padding: 2em;
+body.dark{
+    --main-body-color: hsl(249, 19%, 14%);
+    --container-color-alternate: 
 }
 
-.read-the-docs {
-  color: #888;
+div{
+    background-color: var(--container-color-alternate);
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.App{
+    display: flex;
+    flex-direction: row;
+}
+
+.visible{
+    z-index: 100;
+}
+
+@keyframes slideSection{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }

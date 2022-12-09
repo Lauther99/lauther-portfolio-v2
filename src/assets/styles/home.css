@@ -1,0 +1,59 @@
+#home {
+    background-color: transparent;
+    width: 100%;
+    height: calc(100vh - 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    animation: slideSection 1s ease;
+    padding: 5rem 1rem 1rem 1rem;
+    gap: 2rem;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+#home p{
+    font-size: 25px;
+}
+
+#home h4 span {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.home-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 30px;
+}
+
+.home-icons a{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: blue;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}

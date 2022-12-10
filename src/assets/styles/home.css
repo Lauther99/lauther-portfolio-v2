@@ -13,15 +13,12 @@
 
 #home h1{
     width: 100%;
-    font-size: 30px;
     font-weight: 700;
-    color: var(--main-color);
     text-align: center;
 }
 
 #home h2{
     font-weight: 700;
-    color: var(--main-color);
 }
 
 #home h2 span {

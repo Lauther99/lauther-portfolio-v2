@@ -1,10 +1,54 @@
 #about{
-    background-color: lightcoral;
     width: 100%;
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     animation: slideSection 1s ease;
+}
+
+.description-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.description-container h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.description-container h1::before{
+    content: '';
+    position: absolute;
+    width: calc(40% - 50px);
+    height: 5px;
+    border-radius: 50px;
+    right: 0%;
+    top: 50%;
+    background-color: var(--alt-color)
+}
+
+.description-container h1::after{
+    content: '';
+    position: absolute;
+    width: calc(40% - 50px);
+    height: 5px;
+    border-radius: 50px;
+    left: 0%;
+    top: 50%;
+    background-color: var(--alt-color)
+}
+
+.description-container h2{
+    color: var(--text-color-normal);
+}
+
+.description-container p{
+    color: var(--text-color-light);
+    text-align: justify;
 }

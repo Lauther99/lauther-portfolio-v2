@@ -3,8 +3,9 @@
 :root {
     /*========== Colors ==========*/
     --main-color: #833471;
+    --alt-color: #6F1E51;
     --text-color-normal: #222f3e;
-    --text-color-light: #a4b0be;
+    --text-color-light: #576574;
     --main-body-color: #f1f2f6;
     --container-color-normal: #dfe4ea;
     --button-color: #fff;
@@ -50,6 +51,16 @@ a {
 button {
     border: none;
     cursor: pointer;
+}
+
+h1{
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+h2{
+    font-size: 25px;
+    color: var(--main-color);
 }
 
 .App{

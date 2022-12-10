@@ -9,14 +9,13 @@ const About = ({ pageVisibility }) => {
                 <h1>About Me</h1>
                 <h2>As you saw before . . .</h2>
                 <p>My name is <b>Lauther Valladares</b> and I have always very curious, specially in the technology and science area, sometimes self-taught and sometimes like to work and learn with a team.</p>
-                <h2>Also . . .</h2>
+                <h2>Also I've been . . .</h2>
                 <p>
-                    I've been considered as a good teammate with good ideas and the spirit to move on to achieve projects goals.
+                    Considered as a good teammate with good ideas and the spirit to move on to achieve projects goals.
                     Something I would like to you to know is I'm motivated and passionate for learning new topics and easy to adapt to the different circumstances that presents. </p>
-
-                <h2>And ...</h2>
+                <h2>And I'm looking for ...</h2>
                 <p>
-                    I'm looking for a job opportunity to continue my personal learning to be better and not less important for doing my best and show the world who I am.
+                    A job opportunity to continue my personal learning to be better and not less important for doing my best and show the world who I am.
                 </p>
             </article>
             <article className='info-container'>

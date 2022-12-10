@@ -2,8 +2,8 @@
 
 :root {
     /*========== Colors ==========*/
-    --main-color: #B53471;
-    --text-color-normal: #2f3542;
+    --main-color: #833471;
+    --text-color-normal: #222f3e;
     --text-color-light: #a4b0be;
     --main-body-color: #f1f2f6;
     --container-color-normal: #dfe4ea;
@@ -11,6 +11,7 @@
     --button-color-alt: #32ff7e;
     --button-items-color: #32ff7e;
     --button-items-color-alt: #a4b0be;
+    --border-color: #eee;
     /*========== Font and typography ==========*/
     --body-font: 'Averia Serif Libre', cursive;
 

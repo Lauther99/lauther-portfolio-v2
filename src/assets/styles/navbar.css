@@ -3,12 +3,13 @@
     height: calc(100vh);
     position: fixed;
     top: 0;
-    left: -300px;
+    right: -300px;
     z-index: 200;
+    background-color: var(--container-color-normal);
 }
 
 .open-nav{
-    left: 0;
+    right: 0;
 }
 
 .nav-items{
@@ -19,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    color: var(--alt-color);
 }
 
 .nav-logo{
@@ -29,7 +31,7 @@
 }
 
 .nav-logo-item{
-    background-color: transparent;
+    color: var(--text-color-normal);    
 }
 
 .text{
@@ -53,33 +55,40 @@
 }
 
 .nav-items li{
-    height: 70px;
     width: 200px;
-    text-align: center;
+    height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid var(--border-color);
     cursor: pointer;
-    
-}
-
-.nav-items a{
-    color: #151515;
+    color: var(--text-color-normal);    
 }
 
 .close-open-nav{
-    position: absolute;
-    top: 0;
-    right: -60px;
     width: 40px;
     height: 40px;
     background-color: transparent;
     font-size: 40px;
     cursor: pointer;
     text-align: center;
-    background-color: red;
+    color: var(--main-color);
+}
+
+.close-open-nav .fa-bars{
+    position: absolute;
+    bottom: 1.5rem;
+    left: -4rem;
+}
+
+.close-open-nav .fa-circle-xmark{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.text{
+    display: none;
 }

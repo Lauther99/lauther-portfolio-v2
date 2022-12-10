@@ -10,10 +10,9 @@ const NavBar = () => {
     const infoState = useSelector(state => state.infoState);
     const dispatch = useDispatch();
 
-
     function toggleMenu() {
         menu === 'open-nav' ? setMenu('') : setMenu('open-nav')
-        icon === 'fa-circle-xmark' ? setIcon('fa-bars') : setIcon('fa-circle-xmark')
+        menu === 'open-nav' ? setIcon('fa-bars') : setIcon('fa-circle-xmark')
     }
 
     function changePages(page) {

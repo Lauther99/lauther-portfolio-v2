@@ -19,6 +19,7 @@ const NavBar = () => {
     function changePages(page) {
         dispatch(changePage(page))
         setMenu('')
+        setIcon('fa-bars')
     };
 
     return (

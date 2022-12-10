@@ -60,6 +60,22 @@ const About = ({ pageVisibility }) => {
                     <p>Student exchange at the Technical University Federico Santa Maria - Chile</p>
                 </div>
             </article>
+            <article className='volunteering-container'>
+                <h2>Volunteering</h2>
+                <div className='education-div'>
+                    <p>2021 - 2022</p>
+                    <h3>Ludoteca Gotitas de Amor - Piura</h3>
+                    <p>I developed teaching, communication and organization skills.</p>
+                    <p>I used these skills for teaching 3 and 4 year old children and for proposing/developing activities.</p>
+                </div>
+                <div className='education-div'>
+                    <p>2021 - 2021</p>
+                    <h3>Hub UDEP - Piura</h3>
+                    <p>I developed communication skills such as active listening, assertiveness, empathy and teaching.</p>
+                    <p>I used these skills for teaching 3 and 4 year old children and for proposing/developing activities.</p>
+                    <p>Train more than 20 entrepreneurs in Piura, Lima (zoom line).</p>
+                </div>
+            </article>
 
 
         </section>

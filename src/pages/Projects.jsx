@@ -66,6 +66,6 @@ const Projects = ({pageVisibility}) => {
             </article>
         </section>
     );
-};
+}; 
 
 export default Projects;

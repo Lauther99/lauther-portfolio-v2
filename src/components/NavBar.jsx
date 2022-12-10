@@ -5,19 +5,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changePage } from '../store/slices/infoState.slice';
 
 const NavBar = () => {
-    const [menu, setMenu] = useState('open-nav');
-    const [icon, setIcon] = useState('fa-circle-xmark');
+    const [menu, setMenu] = useState('');
+    const [icon, setIcon] = useState('fa-bars');
     const infoState = useSelector(state => state.infoState);
     const dispatch = useDispatch();
 
 
     function toggleMenu() {
         menu === 'open-nav' ? setMenu('') : setMenu('open-nav')
-        menu === 'open-nav' ? setIcon('fa-bars') : setIcon('fa-circle-xmark')
+        icon === 'fa-circle-xmark' ? setIcon('fa-bars') : setIcon('fa-circle-xmark')
     }
 
     function changePages(page) {
         dispatch(changePage(page))
+        setMenu('')
     };
 
     return (

@@ -76,8 +76,6 @@ const About = ({ pageVisibility }) => {
                     <p>Train more than 20 entrepreneurs in Piura, Lima (zoom line).</p>
                 </div>
             </article>
-
-
         </section>
     );
 };

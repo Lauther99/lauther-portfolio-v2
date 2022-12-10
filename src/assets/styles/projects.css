@@ -1,9 +1,25 @@
 #projects{
     background-color: purple;
     width: 100%;
-    height: calc(100vh - 3rem);
+    padding: 5rem 1rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     animation: slideSection 1s ease;
+    gap: 2rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-img{
+    width: 450px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: contain;
 }

@@ -1,35 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
 
 :root {
     /*========== Colors ==========*/
-    --main-color: hsl(217, 78%, 60%);
-    --button-color: hsl(0, 0%, 17%);
-    --button-color-alt: hsl(0, 0%, 21%);
-    --card-color: hsl(0, 0%, 90%);
-    --text-color-normal: hsl(0, 0%, 35%);
-    --text-color-light: hsl(0, 0%, 55%);
-    --text-color-darky: hsl(0, 0%, 15%);
-    --main-body-color: hsl(206, 4%, 97%);
-    --alternate-body-color: #eee;
-    --container-color-normal: #fff;
-    --container-color-alternate: #eee;
-    --border-color: hsl(0, 0%, 35%);
+    --main-color: #B53471;
+    --text-color-normal: #2f3542;
+    --text-color-light: #a4b0be;
+    --main-body-color: #f1f2f6;
+    --container-color-normal: #dfe4ea;
+    --button-color: #fff;
+    --button-color-alt: #32ff7e;
+    --button-items-color: #32ff7e;
+    --button-items-color-alt: #a4b0be;
     /*========== Font and typography ==========*/
-    --body-font: 'League Spartan', sans-serif;
-}
+    --body-font: 'Averia Serif Libre', cursive;
 
-/*========== Variables Dark theme ==========*/
-/*
-    --main-color: hsl(182, 53%, 74%);
-    --button-color: hsl(246, 16%, 12%);
-    --button-color-alt: hsl(0, 0%, 28%);
-    --card-color: hsla(246, 16%, 5%, .5);
-    --title-color: hsl(0, 0%, 95%);
-    --text-color: hsl(0, 0%, 75%);
-    --body-color: hsl(249, 19%, 14%);
-    --container-color-alternate: hsl(246, 16%, 12%);
-    --border-color: hsl(0, 0%, 20%);
-*/
+}
 
 * {
     margin: 0;
@@ -46,18 +31,12 @@ body {
     min-height: 100vh;
     padding: 1.5rem;
     background-color: var(--main-body-color);
-    /* *** Sunny mode colors *** */
-    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
     overflow: hidden;
+    font-family: var(--body-font);
 }
 
 body.dark{
-    --main-body-color: hsl(249, 19%, 14%);
-    --container-color-alternate: 
-}
-
-div{
-    background-color: var(--container-color-alternate);
+    --main-body-color: hsl(249, 34%, 26%);
 }
 
 ul,

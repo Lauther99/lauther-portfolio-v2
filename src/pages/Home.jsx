@@ -16,11 +16,12 @@ const Home = ({ pageVisibility }) => {
 
     return (
         <section id='home' className={`${pageVisibility}`}>
-            <h2>Welcome to my portfolio!</h2>
+            <h1>Welcome to my portfolio!</h1>
             <p>My name is</p>
-            <h4><span style={getStyleText(myName)}>{myName}</span></h4>
+            <h2><span style={getStyleText(myName)}>{myName}</span></h2>
             <p>and I'm your . . .</p>
-            <h4><span style={getStyleText(text)}>{text}</span></h4>
+            <h2><span style={getStyleText(text)}>{text}</span></h2>
+            <p>Contact me!</p>
             <article className='home-icons'>
                 <a href="https://www.linkedin.com/in/lautherhvalladares/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Pancake27" target='_blank'><i className="fa-brands fa-github"></i></a>

@@ -1,32 +1,52 @@
 #home {
-    background-color: transparent;
     width: 100%;
-    height: calc(100vh - 3rem);
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: flex-start;
-    animation: slideSection 1s ease;
-    padding: 5rem 1rem 1rem 1rem;
-    gap: 2rem;
+    align-items: flex-start;
+    gap: 1.5rem;
     position: relative;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    animation: slideSection 1s ease;
 }
 
-#home p{
-    font-size: 25px;
+#home h1{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
 }
 
-#home h4 span {
+#home h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+#home h2 span {
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     overflow: hidden;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.home-icons{
+#home p{
+    font-size: 16px;
+    color: var(--text-color-normal);
+}
+
+#home p:nth-child(6){
+    width: 100%;
+    text-align: center;
+    animation: shake 5s infinite alternate ease-in-out;
+}
+
+#home .home-icons{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -38,12 +58,30 @@
 .home-icons a{
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: var(--button-color);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    border-radius: 10px;
+
+    color: var(--main-color);
+    position: relative;
+}
+
+.home-icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            red, blue, deeppink, blue,
+            red, blue, deeppink, blue);
+    background-size: 900%;
     border-radius: 10px;
-    color: blue;
+    filter: blur(5px);
+    animation: glowing 20s linear infinite;
 }
 
 @keyframes typing {
@@ -55,5 +93,65 @@
 @keyframes blink {
     50% {
         border-color: transparent
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
     }
 }

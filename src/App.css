@@ -2,16 +2,13 @@
 
 :root {
     /*========== Colors ==========*/
+    --main-body-color: #f1f2f6;
     --main-color: #833471;
     --alt-color: #6F1E51;
     --text-color-normal: #222f3e;
     --text-color-light: #576574;
-    --main-body-color: #f1f2f6;
     --container-color-normal: #dfe4ea;
-    --button-color: #fff;
-    --button-color-alt: #32ff7e;
-    --button-items-color: #32ff7e;
-    --button-items-color-alt: #a4b0be;
+    --container-color-alt: #fff;
     --border-color: #eee;
     --border-color-alt: #a4b0be;
     /*========== Font and typography ==========*/

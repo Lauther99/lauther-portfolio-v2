@@ -5,7 +5,8 @@
     top: 0;
     right: -300px;
     z-index: 200;
-    background-color: var(--container-color-normal);
+    background-color: var(--container-color-alt);
+    box-shadow: 0 0 5px 0 var(--text-color-normal);
 }
 
 .open-nav{
@@ -78,6 +79,13 @@
 }
 
 .close-open-nav .fa-bars{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
     position: absolute;
     bottom: 1.5rem;
     left: -4rem;
@@ -87,6 +95,14 @@
     position: absolute;
     top: 1.5rem;
     right: 1rem;
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--container-color-alt);
 }
 
 .text{

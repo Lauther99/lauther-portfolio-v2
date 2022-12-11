@@ -7,6 +7,7 @@ import reactjs from '../assets/images/reactjs.png'
 import redux from '../assets/images/redux.png'
 import git from '../assets/images/git.png'
 import nodejs from '../assets/images/nodejs.png'
+import mySQL from '../assets/images/sql.png'
 
 const Skills = ({ pageVisibility }) => {
     return (
@@ -40,6 +41,10 @@ const Skills = ({ pageVisibility }) => {
                 <div className='skills-item'>
                     <img src={nodejs} alt="" />
                     <h3>NODE JS</h3>
+                </div>
+                <div className='skills-item'>
+                    <img src={mySQL} alt="" />
+                    <h3>MySQL</h3>
                 </div>
             </article>
         </section>

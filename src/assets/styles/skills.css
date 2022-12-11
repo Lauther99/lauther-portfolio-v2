@@ -1,18 +1,68 @@
 #skills{
-    background-color: pink;
     width: 100%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    padding: 5rem 1rem;
+    gap: 1rem;
     animation: slideSection 1s ease;
-    gap: 2rem;
+}
+
+#skills h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#skills h1:before {
+    content: '';
+    position: absolute;
+    width: calc(40% - 50px);
+    height: 5px;
+    border-radius: 50px;
+    top: 50%;
+    right: 0%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    border-radius: 10px;
+    animation: glowing 30s linear infinite;
+}
+
+#skills h1:after {
+    content: '';
+    position: absolute;
+    width: calc(40% - 50px);
+    height: 5px;
+    border-radius: 50px;
+    top: 50%;
+    left: 0%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    border-radius: 10px;
+    animation: glowing 30s linear infinite;
 }
 
 .skills-container{
     width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background: red;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.skills-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--container-color-normal);
 }

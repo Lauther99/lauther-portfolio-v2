@@ -188,7 +188,6 @@
         max-width: calc(100% - 300px);
         left: 300px;
         margin: 0;
-        padding: 5rem 2rem 5rem 1.5rem;
+        padding: 3rem 2rem 5rem 1.5rem;
     }
-
 }

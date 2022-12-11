@@ -9,11 +9,9 @@ import git from '../assets/images/git.png'
 import nodejs from '../assets/images/nodejs.png'
 import mySQL from '../assets/images/sql.png'
 
-const Skills = ({ pageVisibility }) => {
-    const [order, setOrder] = useState(1);
-    
+const Skills = () => {
     return (
-        <section id='skills' className={`${pageVisibility}`}>
+        <section id='skills'>
             <h1>Skills</h1>
             <article className='skills-container'>
                 <div className='skills-item'>

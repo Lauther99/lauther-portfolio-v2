@@ -8,7 +8,7 @@ import rNmImg from '../assets/images/rNmImg.png'
 import pokedexImg from '../assets/images/pokedexImg.png'
 import ecommerce2Img from '../assets/images/ecommerce2Img.png'
 
-const Projects = ({ pageVisibility }) => {
+const Projects = () => {
     const ecommerce1Link = 'https://un-cafe.netlify.app/'
     const quotesAppLink = 'https://quotes-app-lv.netlify.app/'
     const weatherAppLink = 'https://weather-app-lh.netlify.app/'
@@ -18,7 +18,7 @@ const Projects = ({ pageVisibility }) => {
     const ecommerce2Link = 'https://react-ecommerce-lv.netlify.app/#/'
 
     return (
-        <section id='projects' className={`${pageVisibility}`}>
+        <section id='projects'>
             <h1>My Projects</h1>
             <article className='projects-container'>
                 <a href={ecommerce2Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerce2Img})` }}>

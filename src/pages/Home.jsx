@@ -2,7 +2,7 @@ import React from 'react';
 import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 import '../assets/styles/home.css'
 
-const Home = ({ pageVisibility }) => {
+const Home = () => {
     const myName = "Lauther Valladares"
     const text = "Full stack developer !"
 
@@ -16,7 +16,7 @@ const Home = ({ pageVisibility }) => {
 
 
     return (
-        <section id='home' className={`${pageVisibility}`}>
+        <section id='home'>
             <div className='nav-logo'>
                     <div className='nav-logo-item'>
                         {'<'}

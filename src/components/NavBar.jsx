@@ -3,6 +3,7 @@ import '../assets/styles/navbar.css'
 import '../assets/styles/bgStars.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { changePage } from '../store/slices/infoState.slice';
+import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
     const [menu, setMenu] = useState('');
@@ -21,11 +22,12 @@ const NavBar = () => {
         setIcon('fa-bars')
     };
 
-
     function toggleDarkMode() {
         darkMode === 'darky' ? setDarkMode('') : setDarkMode('darky')
         document.body.classList.toggle('dark')
     }
+
+    const navigate = useNavigate()
 
     return (
         <section className={`nav-bar  ${menu}`}>
@@ -36,11 +38,11 @@ const NavBar = () => {
                     </div>
                 </div>
                 <ul>
-                    <li onClick={() => changePages('home')}><i className="fa-solid fa-house"></i>Home</li>
-                    <li onClick={() => changePages('about')}><i className="fa-solid fa-user"></i>About</li>
-                    <li onClick={() => changePages('skills')}><i className="fa-solid fa-gears"></i>Skills</li>
-                    <li onClick={() => changePages('projects')}><i className="fa-solid fa-folder-closed"></i>Projects</li>
-                    <li onClick={() => changePages('contact')}><i className="fa-solid fa-comments"></i>Contact</li>
+                    <li onClick={() => navigate('/')}><i className="fa-solid fa-house"></i>Home</li>
+                    <li onClick={() => navigate('/about')}><i className="fa-solid fa-user"></i>About</li>
+                    <li onClick={() => navigate('/skills')}><i className="fa-solid fa-gears"></i>Skills</li>
+                    <li onClick={() => navigate('/projects')}><i className="fa-solid fa-folder-closed"></i>Projects</li>
+                    <li onClick={() => navigate('/contact')}><i className="fa-solid fa-comments"></i>Contact</li>
                 </ul>
                 <div className='darky-sunny' onClick={() => toggleDarkMode()}>
                     <i className={`fa-solid fa-sun sunny${darkMode}`}></i>

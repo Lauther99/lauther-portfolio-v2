@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import '../assets/styles/contact.css'
 import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 
-const Contact = ({ pageVisibility }) => {
+const Contact = () => {
     const { register, handleSubmit } = useForm()
     const linkedinLink = 'https://www.linkedin.com/in/lautherhvalladares/'
     const gitHubLink = 'https://github.com/Pancake27'
@@ -19,7 +19,7 @@ const Contact = ({ pageVisibility }) => {
     }
 
     return (
-        <section id='contact' className={`${pageVisibility}`}>
+        <section id='contact'>
             <article className='contact-container'>
                 <h1>Contact Me</h1>
                 <h3>Always at your service</h3>

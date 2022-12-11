@@ -2,9 +2,9 @@ import React from 'react';
 import '../assets/styles/about.css'
 
 
-const About = ({ pageVisibility }) => {
+const About = () => {
     return (
-        <section id='about' className={`${pageVisibility}`}>
+        <section id='about'>
             <article className='description-container'>
                 <h1>About Me</h1>
                 <h2>As you saw before . . .</h2>

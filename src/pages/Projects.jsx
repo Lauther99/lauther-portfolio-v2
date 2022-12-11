@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/styles/projects.css'
 import ecommerceImg from '../assets/images/ecommerce1.png'
 import quotesImg from '../assets/images/quotesApp.png'
 import weatherImg from '../assets/images/weatherImg.png'
@@ -7,6 +6,7 @@ import usersImg from '../assets/images/usersImg.png'
 import rNmImg from '../assets/images/rNmImg.png'
 import pokedexImg from '../assets/images/pokedexImg.png'
 import ecommerce2Img from '../assets/images/ecommerce2Img.png'
+import '../assets/styles/projects.css'
 
 const Projects = () => {
     const ecommerce1Link = 'https://un-cafe.netlify.app/'

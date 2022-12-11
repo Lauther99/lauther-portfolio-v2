@@ -1,33 +1,24 @@
 import React, { useState } from 'react';
 import '../assets/styles/navbar.css'
 import '../assets/styles/bgStars.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { changePage } from '../store/slices/infoState.slice';
 import { useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
     const [menu, setMenu] = useState('');
     const [icon, setIcon] = useState('fa-bars');
     const [darkMode, setDarkMode] = useState('darky');
-    const dispatch = useDispatch();
+    const navigate = useNavigate()
 
     function toggleMenu() {
         menu === 'open-nav' ? setMenu('') : setMenu('open-nav')
         menu === 'open-nav' ? setIcon('fa-bars') : setIcon('fa-circle-xmark')
     }
 
-    function changePages(page) {
-        dispatch(changePage(page))
-        setMenu('')
-        setIcon('fa-bars')
-    };
-
     function toggleDarkMode() {
         darkMode === 'darky' ? setDarkMode('') : setDarkMode('darky')
         document.body.classList.toggle('dark')
     }
 
-    const navigate = useNavigate()
 
     return (
         <section className={`nav-bar  ${menu}`}>

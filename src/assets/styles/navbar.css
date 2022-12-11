@@ -114,6 +114,10 @@
     border-radius: 50%;
 }
 
+.darky-sunny i:hover{
+    transform: scale(1.2);
+}
+
 .darky{
     background-color: var(--container-color-alt);
     z-index: 30;

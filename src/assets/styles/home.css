@@ -12,13 +12,13 @@
     animation: slideSection 1s ease;
 }
 
-#home h1{
+#home h1 {
     width: 100%;
     font-weight: 700;
     text-align: center;
 }
 
-#home h2{
+#home h2 {
     font-weight: 700;
 }
 
@@ -30,18 +30,18 @@
     font-size: 20px;
 }
 
-#home p{
+#home p {
     font-size: 24px;
     color: var(--text-color-normal);
 }
 
-#home p:nth-child(6){
+#home p:nth-child(6) {
     width: 100%;
     text-align: center;
     animation: shake 5s infinite alternate ease-in-out;
 }
 
-#home .home-icons{
+#home .home-icons {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -50,13 +50,14 @@
     font-size: 30px;
 }
 
-.home-icons a{
+.home-icons a {
     width: 50px;
     height: 50px;
     background-color: var(--container-color-alt);
     display: flex;
     justify-content: center;
-    align-items: center;    border-radius: 10px;
+    align-items: center;
+    border-radius: 10px;
     color: var(--main-color);
     position: relative;
 }
@@ -78,6 +79,10 @@
     animation: glowing 30s linear infinite;
 }
 
+.nav-logo {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
     #home {
         width: calc(100% - 300px);
@@ -87,12 +92,16 @@
         align-items: center;
     }
 
-    .text{
+    .nav-logo{
+        display: flex;
+    }
+
+    .text {
         width: 0px;
-        overflow: hidden;
         height: 70px;
+        overflow: hidden;
         transition: all 2s;
-        white-space:nowrap;
+        white-space: nowrap;
         animation: helloWorldMove 10s infinite;
         animation-delay: 1.5s;
     }

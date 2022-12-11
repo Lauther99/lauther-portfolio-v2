@@ -35,18 +35,6 @@
     color: var(--text-color-normal);    
 }
 
-.text{
-    width: 0px;
-    overflow: hidden;
-    height: 70px;
-    transition: all 2s;
-    white-space:nowrap;
-}
-
-.nav-logo:hover .text{
-    width: 350px;
-}
-
 .text span:nth-child(1){
     color: #e82e70;
 }
@@ -104,6 +92,15 @@
     background-color: var(--container-color-alt);
 }
 
-.text{
-    display: none;
+@media screen and (min-width: 1024px) {
+    .nav-bar{
+        width: 300px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .close-open-nav{
+        display: none;
+    }
 }

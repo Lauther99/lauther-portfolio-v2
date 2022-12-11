@@ -61,14 +61,14 @@ const Projects = ({ pageVisibility }) => {
                         <p>React JS || HTML || CSS</p>
                     </div>
                 </a>
-                <a href={usersInterfaceLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${usersImg})` }}>
+                {/* <a href={usersInterfaceLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${usersImg})` }}>
                     <div className='project-info'>
                         <h2>CRUD's App</h2>
                     </div>
                     <div className='project-tech'>
                         <p>React JS || HTML || CSS || Javascript</p>
                     </div>
-                </a>
+                </a> */}
                 <a href={ecommerce1Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerceImg})` }}>
                     <div className='project-info'>
                         <h2>E-commerce App</h2>

@@ -17,6 +17,17 @@ const Home = ({ pageVisibility }) => {
 
     return (
         <section id='home' className={`${pageVisibility}`}>
+            <div className='nav-logo'>
+                    <div className='nav-logo-item'>
+                        {'<'}
+                    </div>
+                    <div className='nav-logo-item text'>
+                        <span>Hello, </span><span>World!</span>
+                    </div>
+                    <div className='nav-logo-item'>
+                        {'/>'}
+                    </div>
+                </div>
             <h1>Welcome to my portfolio!</h1>
             <p>My name is</p>
             <h2><span style={getStyleText(myName)}>{myName}</span></h2>

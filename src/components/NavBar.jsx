@@ -26,13 +26,7 @@ const NavBar = () => {
             <article className='nav-items'>
                 <div className='nav-logo'>
                     <div className='nav-logo-item'>
-                        {'<'}
-                    </div>
-                    <div className='nav-logo-item text'>
-                        <span>Hello, </span><span>World!</span>
-                    </div>
-                    <div className='nav-logo-item'>
-                        {'/>'}
+                        {'</>'}
                     </div>
                 </div>
                 <ul>

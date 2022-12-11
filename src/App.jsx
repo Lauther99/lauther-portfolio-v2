@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import NavBar from './components/NavBar';
 import About from './pages/About';
@@ -6,13 +5,12 @@ import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills';
-import { changePage } from './store/slices/infoState.slice';
 import './App.css'
 import React from 'react'
+import './assets/styles/animations.css'
 
 function App() {
   const infoState = useSelector(state => state.infoState);
-  const dispatch = useDispatch();
   const pageVisibility = 'visible';
 
   function toggleDarkMode() {

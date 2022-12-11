@@ -1,9 +1,13 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import '../assets/styles/contact.css'
+import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 
 const Contact = ({ pageVisibility }) => {
     const { register, handleSubmit } = useForm()
+    const linkedinLink = 'https://www.linkedin.com/in/lautherhvalladares/'
+    const gitHubLink = 'https://github.com/Pancake27'
+    const wspLink = 'https://api.whatsapp.com/send?phone=%2B51952295928&text='
 
     const submit = (data) => {
         emailjs.send('default_service', 'template_sf6eeiv', data, 'ycYkSEzd96HEGbQTW')
@@ -20,21 +24,21 @@ const Contact = ({ pageVisibility }) => {
                 <h1>Contact</h1>
                 <h3>Always at your service</h3>
                 <article className='contact-info-container'>
-                    <div className='contact-info-item'>
+                    <a href={linkedinLink} target='_blank' className='contact-info-item'>
                         <i className="fa-brands fa-linkedin"></i>
                         <b>Linkedin</b>
                         <p>Lauther Valladares</p>
-                    </div>
-                    <div className='contact-info-item'>
+                    </a>
+                    <a href={gitHubLink} target='_blank' className='contact-info-item'>
                         <i className="fa-brands fa-github"></i>
                         <b>Github</b>
                         <p>Lauther Valladares</p>
-                    </div>
-                    <div className='contact-info-item'>
-                        <i className="fa-solid fa-phone"></i>
-                        <b>Phone me</b>
+                    </a>
+                    <a href={wspLink} target='_blank' className='contact-info-item'>
+                        <i className="fa-brands fa-whatsapp"></i>
+                        <b>Whatsapp</b>
                         <p>+51 952 925 298</p>
-                    </div>
+                    </a>
                     <div className='contact-info-item'>
                         <i className="fa-solid fa-location-pin"></i>
                         <b>Location</b>
@@ -45,11 +49,11 @@ const Contact = ({ pageVisibility }) => {
                         <b>Email me</b>
                         <p>lautherharold27@gmail.com</p>
                     </div>
-                    <div className='contact-info-item'>
+                    <a href={myCV} download className='contact-info-item'>
                         <i className="fa-solid fa-file"></i>
                         <b>CV</b>
                         <p>Download</p>
-                    </div>
+                    </a>
                 </article>
                 <h3>Send me an email</h3>
                 <form className='contact-form' onSubmit={handleSubmit(submit)}>

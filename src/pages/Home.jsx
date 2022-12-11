@@ -1,4 +1,5 @@
 import React from 'react';
+import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 import '../assets/styles/home.css'
 
 const Home = ({ pageVisibility }) => {
@@ -25,7 +26,7 @@ const Home = ({ pageVisibility }) => {
             <article className='home-icons'>
                 <a href="https://www.linkedin.com/in/lautherhvalladares/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Pancake27" target='_blank'><i className="fa-brands fa-github"></i></a>
-                <a href="" target='_blank'><i className="fa-regular fa-file"></i></a>
+                <a href={myCV} download><i className="fa-regular fa-file"></i></a>
             </article>
         </section>
     );

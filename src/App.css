@@ -42,6 +42,10 @@ body.dark{
     --main-body-color: hsl(249, 34%, 26%);
 }
 
+a{
+    color: var(--text-color-normal);
+}
+
 ul,
 li,
 a {

@@ -13,10 +13,6 @@ function App() {
   const infoState = useSelector(state => state.infoState);
   const pageVisibility = 'visible';
 
-  function toggleDarkMode() {
-    document.body.classList.toggle('dark')
-  }
-
   function renderInfo() {
     switch (infoState) {
       case 'about':

@@ -90,3 +90,15 @@
         width: 0px;
     }
 }
+
+@keyframes growScale {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1);
+    }
+}

@@ -25,7 +25,7 @@ const About = ({ pageVisibility }) => {
                 </div>
                 <div className='info-item'>
                     <h2>Github</h2>
-                    <a href="https://github.com/Pancake27" target='_blank'>Lauther Valladares</a>
+                    <a href="https://github.com/Pancake27" target='_blank'>Lauther</a>
                 </div>
                 <div className='info-item'>
                     <h2>Phone</h2>

@@ -7,7 +7,7 @@ import { changePage } from '../store/slices/infoState.slice';
 const NavBar = () => {
     const [menu, setMenu] = useState('');
     const [icon, setIcon] = useState('fa-bars');
-    const infoState = useSelector(state => state.infoState);
+    const [darkMode, setDarkMode] = useState('darky');
     const dispatch = useDispatch();
 
     function toggleMenu() {
@@ -20,6 +20,12 @@ const NavBar = () => {
         setMenu('')
         setIcon('fa-bars')
     };
+
+
+    function toggleDarkMode() {
+        darkMode === 'darky' ? setDarkMode('') : setDarkMode('darky')
+        document.body.classList.toggle('dark')
+    }
 
     return (
         <section className={`nav-bar  ${menu}`}>
@@ -36,6 +42,10 @@ const NavBar = () => {
                     <li onClick={() => changePages('projects')}><i className="fa-solid fa-folder-closed"></i>Projects</li>
                     <li onClick={() => changePages('contact')}><i className="fa-solid fa-comments"></i>Contact</li>
                 </ul>
+                <div className='darky-sunny' onClick={() => toggleDarkMode()}>
+                    <i className={`fa-solid fa-sun sunny${darkMode}`}></i>
+                    <i className={`fa-solid fa-moon ${darkMode}`}></i>
+                </div>
             </article>
             <div className='close-open-nav' onClick={() => toggleMenu()}>
                 <i className={`fa-solid ${icon}`}></i>

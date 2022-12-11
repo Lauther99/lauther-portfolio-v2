@@ -79,7 +79,7 @@
     animation: glowing 30s linear infinite;
 }
 
-.nav-logo {
+#home .nav-logo {
     display: none;
 }
 
@@ -92,7 +92,7 @@
         align-items: center;
     }
 
-    .nav-logo{
+    #home .nav-logo{
         display: flex;
     }
 
@@ -104,5 +104,9 @@
         white-space: nowrap;
         animation: helloWorldMove 10s infinite;
         animation-delay: 1.5s;
+    }
+
+    #home h2 span {
+        font-size: 30px;
     }
 }

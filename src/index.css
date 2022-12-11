@@ -3,20 +3,20 @@
 :root {
     /*========== Colors ==========*/
     --main-body-color: #f1f2f6;
-    --main-color: #833471;
-    --alt-color: #6F1E51;
+    --main-color: #952F57;
+    --alt-color: #952F57;
     --text-color-normal: #222f3e;
     --text-color-light: #576574;
-    --container-color-normal: #dfe4ea;
-    --container-color-normal-rgba: #dfe4ea80;
+    --container-color-normal: #dfe4ea80;
+    --nav-container-bg: #1515152a;
     --container-color-alt: #fff;
     --card-container: #dfe4eade;
     --border-color: #eee;
     --border-color-alt: #a4b0be;
     --button-bg: #fff;
+    --sunny-color: #48dbfb; 
     /*========== Font and typography ==========*/
     --body-font: 'Averia Serif Libre', cursive;
-
 }
 
 * {
@@ -39,7 +39,14 @@ body {
 }
 
 body.dark{
-    --main-body-color: hsl(249, 34%, 26%);
+    --main-body-color: #222f3e;
+    --nav-container-bg: #1515152a;
+    --main-color: #48dbfb;
+    --text-color-normal: #fff;
+    --text-color-light: #f7f1e3;
+    --alt-color: #6F1E51;
+    --container-color-normal: #1515155e;
+    --card-container: #1515155e;
 }
 
 a{
@@ -80,5 +87,21 @@ p{
 @media screen and (min-width: 1024px) {
     body{
         padding: 0 !important;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 20px;
     }
 }

@@ -87,6 +87,10 @@
     font-size: 30px;
 }
 
+.contact-info-container b{
+    color: var(--text-color-normal);
+}
+
 .contact-form{
     width: 100%;
     max-width: 760px;
@@ -125,9 +129,10 @@
     background-color: var(--button-bg);
 }
 
-.contact-form button:hover{
+.contact-form .btn-submit:hover{
     box-shadow: 0 0 10px 0 var(--alt-color);
     animation: shake .5s;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -150,5 +155,9 @@
     
     .contact-info-container{
         gap: 3rem;
+    }
+
+    .btn-submit{
+        font-size: 20px;
     }
 }

@@ -96,17 +96,4 @@
         animation: helloWorldMove 10s infinite;
         animation-delay: 3s;
     }
-    
-}
-
-@keyframes helloWorldMove {
-    0%{
-        width: 0px;
-    }
-    50%{
-        width: 380px;
-    }
-    100%{
-        width: 0px;
-    }
 }

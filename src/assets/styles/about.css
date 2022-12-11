@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1rem;
+    gap: 7rem;
     animation: slideSection 1s ease;
 }
 
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .description-container h1 {
@@ -72,7 +72,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .info-item {
@@ -183,7 +183,12 @@
 
 @media screen and (min-width: 1024px) {
     #about{
-        width: calc(100% - 300px - .5rem);
+        position: relative;
+        width: calc(100% - 300px);
+        max-width: calc(100% - 300px);
+        left: 300px;
+        margin: 0;
+        padding: 5rem 2rem 5rem 1.5rem;
     }
 
 }

@@ -22,59 +22,59 @@ const Projects = ({ pageVisibility }) => {
             <h1>My Projects</h1>
             <article className='projects-container'>
                 <a href={ecommerce2Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerce2Img})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>E-commerce App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || Redux ||HTML || CSS || Javascript</p>
                     </div>
                 </a>
                 <a href={pokedexAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${pokedexImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>Pokédex App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || Redux ||HTML || CSS || Javascript</p>
                     </div>
                 </a>
                 <a href={rickAndMortyAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${rNmImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>Rick and Morty App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || Redux ||HTML || CSS || Javascript</p>
                     </div>
                 </a>
                 <a href={weatherAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${weatherImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>Weather App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || HTML || CSS || Javascript</p>
                     </div>
                 </a>
                 <a href={quotesAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${quotesImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>Quotes App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || HTML || CSS</p>
                     </div>
                 </a>
                 {/* <a href={usersInterfaceLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${usersImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>CRUD's App</h2>
                     </div>
-                    <div className='project-tech'>
+                    <div className='project-tech projects-animation'>
                         <p>React JS || HTML || CSS || Javascript</p>
                     </div>
                 </a> */}
                 <a href={ecommerce1Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerceImg})` }}>
-                    <div className='project-info'>
+                    <div className='project-info projects-animation'>
                         <h2>E-commerce App</h2>
                     </div>
-                    <div className='project-tech'>
-                        <p>Javascript || HTML || CSS</p>
+                    <div className='project-tech projects-animation'>
+                        <p>Vanilla Javascript || HTML || CSS</p>
                     </div>
                 </a >
             </article>

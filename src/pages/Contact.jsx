@@ -21,7 +21,7 @@ const Contact = ({ pageVisibility }) => {
     return (
         <section id='contact' className={`${pageVisibility}`}>
             <article className='contact-container'>
-                <h1>Contact</h1>
+                <h1>Contact Me</h1>
                 <h3>Always at your service</h3>
                 <article className='contact-info-container'>
                     <a href={linkedinLink} target='_blank' className='contact-info-item'>
@@ -32,7 +32,7 @@ const Contact = ({ pageVisibility }) => {
                     <a href={gitHubLink} target='_blank' className='contact-info-item'>
                         <i className="fa-brands fa-github"></i>
                         <b>Github</b>
-                        <p>Lauther Valladares</p>
+                        <p>Lauther</p>
                     </a>
                     <a href={wspLink} target='_blank' className='contact-info-item'>
                         <i className="fa-brands fa-whatsapp"></i>
@@ -55,10 +55,9 @@ const Contact = ({ pageVisibility }) => {
                         <p>Download</p>
                     </a>
                 </article>
-                <h3>Send me an email</h3>
                 <form className='contact-form' onSubmit={handleSubmit(submit)}>
+                    <h3>Send me an email</h3>
                     <div className='form-item'>
-                        <label htmlFor="email">Your email</label>
                         <input type="email" name="email" id="email" placeholder='Your email . . .' {...register('email')} required></input>
                     </div>
                     <div className='form-item'>

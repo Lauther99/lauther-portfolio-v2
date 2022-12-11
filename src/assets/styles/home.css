@@ -94,6 +94,6 @@
         transition: all 2s;
         white-space:nowrap;
         animation: helloWorldMove 10s infinite;
-        animation-delay: 3s;
+        animation-delay: 1.5s;
     }
 }

@@ -88,6 +88,9 @@
 }
 
 .contact-form{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -125,4 +128,27 @@
 .contact-form button:hover{
     box-shadow: 0 0 10px 0 var(--alt-color);
     animation: shake .5s;
+}
+
+@media screen and (min-width: 1024px) {
+    #contact{
+        position: relative;
+        width: calc(100% - 300px);
+        max-width: calc(100% - 300px);
+        left: 300px;
+        margin: 0;
+        padding: 3rem 2rem 5rem 1.5rem;
+    }
+
+    .contact-container h3:nth-child(2){
+        text-align: center;
+    }
+
+    .contact-container{
+        gap: 3rem;
+    }
+    
+    .contact-info-container{
+        gap: 3rem;
+    }
 }

@@ -1,9 +1,121 @@
 #contact{
-    background-color: blue;
     width: 100%;
-    height: calc(100vh - 3rem);
+    padding-bottom: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: slideSection 1s ease;
+}
+
+#contact h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.contact-container h3:nth-child(2){
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+#contact h1::before {
+    content: '';
+    position: absolute;
+    width: calc(40% - 60px);
+    height: 5px;
+    border-radius: 50px;
+    right: 0%;
+    top: 50%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    border-radius: 10px;
+    animation: glowing 30s linear infinite;
+}
+
+#contact h1::after {
+    content: '';
+    position: absolute;
+    width: calc(40% - 60px);
+    height: 5px;
+    border-radius: 50px;
+    left: 0%;
+    top: 50%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    border-radius: 10px;
+    animation: glowing 30s linear infinite;
+}
+
+.contact-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-info-item{
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+}
+
+.contact-info-item:hover{
+    cursor: pointer;
+    animation: shake .5s;
+}
+
+.contact-info-item i{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form textarea{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid var(--border-color-alt);
+    background-color: var(--container-color-normal-rgba);
+    color: var(--text-color-normal);
+    backdrop-filter: blur(2px);
+}
+
+.contact-form button{
+    margin: 0 auto;
+    width: 100px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: var(--button-bg);
+}
+
+.contact-form button:hover{
+    box-shadow: 0 0 10px 0 var(--alt-color);
+    animation: shake .5s;
 }

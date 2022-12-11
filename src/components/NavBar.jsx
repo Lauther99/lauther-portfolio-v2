@@ -22,8 +22,8 @@ const NavBar = () => {
     };
 
     return (
-        <div className={`nav-bar  ${menu}`}>
-            <ul className='nav-items'>
+        <section className={`nav-bar  ${menu}`}>
+            <article className='nav-items'>
                 <div className='nav-logo'>
                     <div className='nav-logo-item'>
                         {'<'}
@@ -35,16 +35,18 @@ const NavBar = () => {
                         {'/>'}
                     </div>
                 </div>
-                <li onClick={() => changePages('home')}><i className="fa-solid fa-house"></i>Home</li>
-                <li onClick={() => changePages('about')}><i className="fa-solid fa-user"></i>About</li>
-                <li onClick={() => changePages('skills')}><i className="fa-solid fa-gears"></i>Skills</li>
-                <li onClick={() => changePages('projects')}><i className="fa-solid fa-folder-closed"></i>Projects</li>
-                <li onClick={() => changePages('contact')}><i className="fa-solid fa-comments"></i>Contact</li>
-            </ul>
+                <ul>
+                    <li onClick={() => changePages('home')}><i className="fa-solid fa-house"></i>Home</li>
+                    <li onClick={() => changePages('about')}><i className="fa-solid fa-user"></i>About</li>
+                    <li onClick={() => changePages('skills')}><i className="fa-solid fa-gears"></i>Skills</li>
+                    <li onClick={() => changePages('projects')}><i className="fa-solid fa-folder-closed"></i>Projects</li>
+                    <li onClick={() => changePages('contact')}><i className="fa-solid fa-comments"></i>Contact</li>
+                </ul>
+            </article>
             <div className='close-open-nav' onClick={() => toggleMenu()}>
                 <i className={`fa-solid ${icon}`}></i>
             </div>
-        </div>
+        </section>
     );
 };
 

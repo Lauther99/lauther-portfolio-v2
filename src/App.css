@@ -8,10 +8,12 @@
     --text-color-normal: #222f3e;
     --text-color-light: #576574;
     --container-color-normal: #dfe4ea;
+    --container-color-normal-rgba: #dfe4ea80;
     --container-color-alt: #fff;
     --card-container: #dfe4eade;
     --border-color: #eee;
     --border-color-alt: #a4b0be;
+    --button-bg: #fff;
     /*========== Font and typography ==========*/
     --body-font: 'Averia Serif Libre', cursive;
 
@@ -63,7 +65,7 @@ h2{
 }
 
 h3{
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-color-normal);
 }
 

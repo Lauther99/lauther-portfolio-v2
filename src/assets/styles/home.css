@@ -75,7 +75,7 @@
     background-size: 900%;
     border-radius: 10px;
     filter: blur(5px);
-    animation: glowing 20s linear infinite;
+    animation: glowing 30s linear infinite;
 }
 
 @keyframes typing {

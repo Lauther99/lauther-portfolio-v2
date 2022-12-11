@@ -1,14 +1,15 @@
-#about{
+#about {
     width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 1rem;
     animation: slideSection 1s ease;
 }
 
-.description-container{
+.description-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,13 +17,13 @@
     gap: 1rem;
 }
 
-.description-container h1{
+.description-container h1 {
     width: 100%;
     text-align: center;
     position: relative;
 }
 
-.description-container h1::before{
+.description-container h1::before {
     content: '';
     position: absolute;
     width: calc(40% - 50px);
@@ -30,10 +31,15 @@
     border-radius: 50px;
     right: 0%;
     top: 50%;
-    background-color: var(--alt-color)
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    border-radius: 10px;
+    animation: glowing 30s linear infinite;
 }
 
-.description-container h1::after{
+.description-container h1::after {
     content: '';
     position: absolute;
     width: calc(40% - 50px);
@@ -41,14 +47,135 @@
     border-radius: 50px;
     left: 0%;
     top: 50%;
-    background-color: var(--alt-color)
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    animation: glowing 30s linear infinite;
 }
 
-.description-container h2{
+.description-container h2 {
     color: var(--text-color-normal);
 }
 
-.description-container p{
+.description-container p {
     color: var(--text-color-light);
     text-align: justify;
+}
+
+.info-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-item {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: .5rem;
+    position: relative;
+}
+
+.info-item:hover{
+    animation: shake .5s linear;
+}
+
+.info-item:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    background: linear-gradient(45deg,
+    red, blue, deeppink, blue,
+    red, blue, deeppink, blue);
+    background-size: 900%;
+    animation: glowing 30s linear infinite;
+}
+
+.info-item a,
+.info-item p, .info-item i {
+    color: var(--text-color-light);
+    font-size: 16px;
+}
+
+.info-item a{
+    position: cursor;
+}
+
+.info-item i{
+    font-size: 20px;
+}
+
+.info-item-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.education-volunteering{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.edu-vol-container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--container-color-normal);
+}
+
+.education-div{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    position: relative;
+}
+
+.education-div h3, .education-div p{
+    padding: 0 .5rem;
+}
+
+.education-div:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: calc(100% - 10px);
+    top: 10px;
+    background-color: var(--main-color);
+    right: 100%;
+}
+
+.education-div p:nth-child(1){
+    position: relative;
+    color: var(--text-color-normal);
+    font-weight: 700;
+}
+
+.education-div p:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 4px;
+    background-color: var(--main-color);
+    right: calc(99% + 1.5px);
 }

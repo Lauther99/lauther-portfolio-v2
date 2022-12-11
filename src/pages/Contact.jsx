@@ -1,7 +1,19 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import '../assets/styles/contact.css'
 
 const Contact = ({ pageVisibility }) => {
+    const { register, handleSubmit } = useForm()
+
+    const submit = (data) => {
+        emailjs.send('default_service', 'template_sf6eeiv', data, 'ycYkSEzd96HEGbQTW')
+            .then(() => {
+                alert('Sent!');
+            }, (err) => {
+                alert(JSON.stringify(err));
+            });
+    }
+
     return (
         <section id='contact' className={`${pageVisibility}`}>
             <article className='contact-container'>
@@ -39,10 +51,16 @@ const Contact = ({ pageVisibility }) => {
                         <p>Download</p>
                     </div>
                 </article>
-                <form action="" className='contact-form'>
-                    <label htmlFor=""><h3>Send me an email</h3></label>
-                    <textarea name="textarea" rows="5" cols="50" placeholder='Message . . .'></textarea>
-                    <button type='button'>Send</button>
+                <h3>Send me an email</h3>
+                <form className='contact-form' onSubmit={handleSubmit(submit)}>
+                    <div className='form-item'>
+                        <label htmlFor="email">Your email</label>
+                        <input type="email" name="email" id="email" placeholder='Your email . . .' {...register('email')} required></input>
+                    </div>
+                    <div className='form-item'>
+                        <textarea name="message" id='message' rows="5" cols="40" placeholder='Message . . .' {...register('message')} required></textarea>
+                    </div>
+                    <input type='submit' value='Send' className='btn-submit' />
                 </form>
             </article>
         </section>

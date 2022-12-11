@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills';
 import { changePage } from './store/slices/infoState.slice';
 import './App.css'
+import React from 'react'
 
 function App() {
   const infoState = useSelector(state => state.infoState);

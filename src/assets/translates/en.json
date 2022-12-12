@@ -1,0 +1,59 @@
+[
+    {
+        "home": "Home",
+        "hello": "Hello,",
+        "world": "World!",
+        "welcome": "Welcome to my portfolio!",
+        "mynameis": "My name is",
+        "imyour": "and I'm your . . .",
+        "contactme": "Contact me!"
+    },
+    {
+        "about": "About",
+        "title": "About Me",
+        "sub1": "As you saw before . . .",
+        "txt1": "My name is ",
+        "txt2": "and I would like to present me like a person very curious, specially in the technology and science area, sometimes self-taught but most of the times like to work and learn with a team.",
+        "sub2": "Also I've been . . .",
+        "txt3": "Considered as a good teammate with good ideas and the spirit to move on to achieve projects goals. Something I would like to you to know is I'm motivated and passionate for learning new topics and easy to adapt to the different circumstances that presents. ",
+        "sub3": "And I'm looking for ...",
+        "txt4": "A job opportunity to continue my personal learning to be better and last but not least for giving my best and show the world who I am. ",
+        "phone": "Phone",
+        "location": "Location",
+        "coffee": "Coffee",
+        "education": "Education",
+        "edutitle1": "Full Stack Developer - Academlo Bootcamp",
+        "edusub1": "+280 theoretical - practical course hours.",
+        "edusub2" :"+6 portfolio projects",
+        "edutitle2" : "Industrial Engineer - Piura's University",
+        "edusub3": "Merit order: Upper third",
+        "edusub4" :"Student exchange at the Technical University Federico Santa Maria - Chile",
+        "volunt":"Volunteering",
+        "voluntsub1" :"I developed teaching, communication and organization skills.",
+        "voluntsub2" :"I used these skills for teaching 3 and 4 year old children and for proposing/developing activities.",
+        "voluntsub3" :"I developed communication skills such as active listening, assertiveness, empathy and teaching.",
+        "voluntsub4" :"I used these skills to give counseling to small entrepreneurs on cash flow and safety and health at work.",
+        "voluntsub5" :"I Trained more than 20 entrepreneurs in Piura, Lima (zoom line)."
+    },
+    {
+        "skills": "Skills"
+    },
+    {
+        "projects": "Projects",
+        "title": "My Projects"
+    },
+    {
+        "contact": "Contact",
+        "title": "Contact Me",
+        "sub1" :"Always at your service",
+        "location" : "Location",
+        "email" :"Email me",
+        "download" : "Download",
+        "send" :"Send me an email",
+        "message" : "Message . . .",
+        "sendbtn" :"Send"
+    },
+    {
+        "language" : "Spanish"
+    }
+]

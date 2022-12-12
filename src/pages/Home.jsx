@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 import '../assets/styles/home.css'
+import {changeLanguage} from '../store/slices/translateState.slice'
 
 const Home = () => {
+    const translateState = useSelector(state => state.translate);
     const myName = "Lauther Valladares"
     const text = "Full stack developer !"
 
@@ -14,7 +17,6 @@ const Home = () => {
         return textStyle
     }
 
-
     return (
         <section id='home'>
             <div className='nav-logo'>
@@ -22,18 +24,18 @@ const Home = () => {
                         {'<'}
                     </div>
                     <div className='nav-logo-item text'>
-                        <span>Hello, </span><span>World!</span>
+                        <span>{translateState[0]?.hello} </span><span>{translateState[0]?.world}</span>
                     </div>
                     <div className='nav-logo-item'>
                         {'/>'}
                     </div>
                 </div>
-            <h1>Welcome to my portfolio!</h1>
-            <p>My name is</p>
+            <h1>{translateState[0]?.welcome}</h1>
+            <p>{translateState[0]?.mynameis}</p>
             <h2><span style={getStyleText(myName)}>{myName}</span></h2>
-            <p>and I'm your . . .</p>
+            <p>{translateState[0]?.imyour}</p>
             <h2><span style={getStyleText(text)}>{text}</span></h2>
-            <p>Contact me!</p>
+            <p>{translateState[0]?.contactme}</p>
             <article className='home-icons'>
                 <a href="https://www.linkedin.com/in/lautherhvalladares/" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Pancake27" target='_blank'><i className="fa-brands fa-github"></i></a>

@@ -129,6 +129,26 @@
     z-index: 20;
 }
 
+.translate-btn{
+    width: 150px;
+    height: 40px;
+    padding: 0 1rem;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: var(--button-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: var(--main-color);
+}
+
+.fa-language{
+    color: var(--main-color);
+}
+
+
 @media screen and (min-width: 1024px) {
     .nav-bar{
         width: 300px;

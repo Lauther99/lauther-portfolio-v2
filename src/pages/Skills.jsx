@@ -8,11 +8,14 @@ import redux from '../assets/images/redux.png'
 import git from '../assets/images/git.png'
 import nodejs from '../assets/images/nodejs.png'
 import mySQL from '../assets/images/sql.png'
+import { useSelector } from 'react-redux';
 
 const Skills = () => {
+    const translateState = useSelector(state => state.translate);
+
     return (
         <section id='skills'>
-            <h1>Skills</h1>
+            <h1>{translateState[2]?.skills}</h1>
             <article className='skills-container'>
                 <div className='skills-item'>
                     <img src={js} alt="" />

@@ -7,8 +7,11 @@ import rNmImg from '../assets/images/rNmImg.png'
 import pokedexImg from '../assets/images/pokedexImg.png'
 import ecommerce2Img from '../assets/images/ecommerce2Img.png'
 import '../assets/styles/projects.css'
+import { useSelector } from 'react-redux';
 
 const Projects = () => {
+    const translateState = useSelector(state => state.translate);
+    
     const ecommerce1Link = 'https://un-cafe.netlify.app/'
     const quotesAppLink = 'https://quotes-app-lv.netlify.app/'
     const weatherAppLink = 'https://weather-app-lh.netlify.app/'
@@ -19,7 +22,7 @@ const Projects = () => {
 
     return (
         <section id='projects'>
-            <h1>My Projects</h1>
+            <h1>{translateState[3]?.title}</h1>
             <article className='projects-container'>
                 <a href={ecommerce2Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerce2Img})` }}>
                     <div className='project-info projects-animation'>

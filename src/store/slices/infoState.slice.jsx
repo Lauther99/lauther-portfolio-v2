@@ -17,5 +17,4 @@ export default infoStateSlice.reducer;
 
 export const changePage = (page) => (dispatch) => {
     dispatch(changeInfoState(page));
-    return 
 }

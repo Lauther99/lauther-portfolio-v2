@@ -82,6 +82,7 @@ h3{
 
 p{
     color: var(--text-color-light);
+    text-align: justify;
 }
 
 @media screen and (min-width: 1024px) {

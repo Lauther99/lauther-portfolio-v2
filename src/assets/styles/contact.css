@@ -7,16 +7,17 @@
     animation: slideSection 1s ease;
 }
 
-#contact h1{
-    width: 100%;
-    text-align: center;
-    position: relative;
-}
-
 .contact-container h3:nth-child(2){
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
+}
+
+#contact h1{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 20;
 }
 
 #contact h1::before {
@@ -33,6 +34,7 @@
     background-size: 900%;
     border-radius: 10px;
     animation: glowing 30s linear infinite;
+    z-index: 10;
 }
 
 #contact h1::after {
@@ -49,6 +51,7 @@
     background-size: 900%;
     border-radius: 10px;
     animation: glowing 30s linear infinite;
+    z-index: 10;
 }
 
 .contact-container{
@@ -159,5 +162,15 @@
 
     .btn-submit{
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #contact h1::before {
+        content: none;
+    }
+    
+    #contact h1::after {
+        content: none;
     }
 }

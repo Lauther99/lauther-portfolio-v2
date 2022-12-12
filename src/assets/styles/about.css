@@ -22,6 +22,7 @@
     width: 100%;
     text-align: center;
     position: relative;
+    z-index: 20;
 }
 
 .description-container h1::before {
@@ -38,6 +39,7 @@
     background-size: 900%;
     border-radius: 10px;
     animation: glowing 30s linear infinite;
+    z-index: -1;
 }
 
 .description-container h1::after {
@@ -53,6 +55,7 @@
     red, blue, deeppink, blue);
     background-size: 900%;
     animation: glowing 30s linear infinite;
+    z-index: -1;
 }
 
 .description-container h2 {
@@ -190,5 +193,15 @@
         left: 300px;
         margin: 0;
         padding: 3rem 2rem 5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .description-container h1::before {
+        content: none;
+    }
+    
+    .description-container h1::after {
+        content: none;
     }
 }

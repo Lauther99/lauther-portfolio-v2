@@ -92,3 +92,13 @@
         transform: scale(1.2);
     }
 }
+
+@media screen and (max-width: 530px) {
+    #skills h1::before {
+        content: none;
+    }
+    
+    #skills h1::after {
+        content: none;
+    }
+}

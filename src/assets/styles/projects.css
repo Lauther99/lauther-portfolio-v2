@@ -101,14 +101,6 @@
     color: var(--text-color-normal);
 }
 
-/* .project-img:hover .project-info{ para el desktop, se activa este y descativa el de abajo
-    height: 50%;
-}
-
-.project-img:hover .project-tech{
-    height: 50%;
-} */
-
 .projects-animation {
     animation: goUpGoDown 5s infinite;
     animation-delay: 0s;
@@ -152,5 +144,15 @@
 
     .project-img:hover .project-tech {
         height: 50%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #projects h1::before {
+        content: none;
+    }
+    
+    #projects h1::after {
+        content: none;
     }
 }

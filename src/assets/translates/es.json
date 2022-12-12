@@ -10,7 +10,7 @@
     },
     {
         "about": "Acerca de mi",
-        "title": "Acerca de mi",
+        "title": "Acerca \nde mi ",
         "sub1": "Como ya viste . . .",
         "txt1": "Mi nombre es ",
         "txt2": "y me gustaría presentarme como una persona muy curiosa, sobre todo en el área de la tecnología y ciencia, a veces autodidacta pero la mayoría de las veces me gusta trabajar y aprender en equipo.",
@@ -24,16 +24,16 @@
         "education": "Educación",
         "edutitle1": "Desarrollador Full Stack - Academlo Bootcamp",
         "edusub1": "+280 horas teórico practicas.",
-        "edusub2" :"+6 proyectos de portafolio",
-        "edutitle2" : "Ingeniería Industrial y de Sistemas - Universidad de Piura",
+        "edusub2": "+6 proyectos de portafolio",
+        "edutitle2": "Ingeniería Industrial y de Sistemas - Universidad de Piura",
         "edusub3": "Orden de mérito: Tercio Superior",
-        "edusub4" :"Estudiante de intercambio en la Universidad técnica Federico Santa María - Chile",
-        "volunt":"Voluntariado",
-        "voluntsub1" :"Desarrollé habilidades de enseñanza, comunicación y organización.",
-        "voluntsub2" :"Empleé estas habilidades para el dictado de clases a niños de 3 y 4 años y para la proposición/desarrollo de actividades.",
-        "voluntsub3" :"Desarrollé habilidades comunicativas como escucha activa, asertividad, empatía y enseñanza.",
-        "voluntsub4" :"Utilicé estas habilidades para capacitar emprendedores en temas de SST y flujo de caja.",
-        "voluntsub5" :"Capacité a más de 20 emprendedores en Piura, Lima (vía zoom)."
+        "edusub4": "Estudiante de intercambio en la Universidad técnica Federico Santa María - Chile",
+        "volunt": "Voluntariado",
+        "voluntsub1": "Desarrollé habilidades de enseñanza, comunicación y organización.",
+        "voluntsub2": "Empleé estas habilidades para el dictado de clases a niños de 3 y 4 años y para la proposición/desarrollo de actividades.",
+        "voluntsub3": "Desarrollé habilidades comunicativas como escucha activa, asertividad, empatía y enseñanza.",
+        "voluntsub4": "Utilicé estas habilidades para capacitar emprendedores en temas de SST y flujo de caja.",
+        "voluntsub5": "Capacité a más de 20 emprendedores en Piura, Lima (vía zoom)."
     },
     {
         "skills": "Habilidades"
@@ -45,15 +45,15 @@
     {
         "contact": "Contacto",
         "title": "Contáctame",
-        "sub1" :"Siempre a tu servicio",
-        "location" : "Ubicación",
-        "email" :"Escríbeme",
-        "download" : "Descargar",
-        "send" :"Envíame un mensaje",
-        "message" : "Mensaje . . .",
-        "sendbtn" :"Enviar"
+        "sub1": "Siempre a tu servicio",
+        "location": "Ubicación",
+        "email": "Escríbeme",
+        "download": "Descargar",
+        "send": "Envíame un mensaje",
+        "message": "Mensaje . . .",
+        "sendbtn": "Enviar"
     },
     {
-        "language" : "English"
+        "language": "English"
     }
 ]

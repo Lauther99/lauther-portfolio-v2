@@ -115,7 +115,7 @@
     border-radius: 5px;
     font-size: 14px;
     border: 1px solid var(--border-color-alt);
-    background-color: var(--container-color-normal-rgba);
+    background-color: var(--nav-container-bg);
     color: var(--text-color-normal);
     backdrop-filter: blur(2px);
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import '../assets/styles/contact.css'
 import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
-import { useSelector } from 'react-redux';
+import { useTranslateStore } from "../store/store"
 
 const Contact = () => {
-    const translateState = useSelector(state => state.translate);
+    const translateState = useTranslateStore(state => state.language);
 
     const { register, handleSubmit } = useForm()
     const linkedinLink = 'https://www.linkedin.com/in/lautherhvalladares/'

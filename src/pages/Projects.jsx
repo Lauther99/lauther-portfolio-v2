@@ -7,10 +7,10 @@ import rNmImg from '../assets/images/rNmImg.png'
 import pokedexImg from '../assets/images/pokedexImg.png'
 import ecommerce2Img from '../assets/images/ecommerce2Img.png'
 import '../assets/styles/projects.css'
-import { useSelector } from 'react-redux';
+import { useTranslateStore } from "../store/store"
 
 const Projects = () => {
-    const translateState = useSelector(state => state.translate);
+    const translateState = useTranslateStore(state => state.language);
     
     const ecommerce1Link = 'https://un-cafe.netlify.app/'
     const quotesAppLink = 'https://quotes-app-lv.netlify.app/'

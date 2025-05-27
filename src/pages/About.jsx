@@ -1,11 +1,11 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import '../assets/styles/about.css'
+import { useTranslateStore } from "../store/store"
 
 
 
 const About = () => {
-    const translateState = useSelector(state => state.translate);
+    const translateState = useTranslateStore(state => state.language);
 
     return (
         <section id='about'>

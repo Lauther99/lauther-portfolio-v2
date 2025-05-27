@@ -8,10 +8,10 @@ import redux from '../assets/images/redux.png'
 import git from '../assets/images/git.png'
 import nodejs from '../assets/images/nodejs.png'
 import mySQL from '../assets/images/sql.png'
-import { useSelector } from 'react-redux';
+import { useTranslateStore } from "../store/store"
 
 const Skills = () => {
-    const translateState = useSelector(state => state.translate);
+    const translateState = useTranslateStore(state => state.language);
 
     return (
         <section id='skills'>

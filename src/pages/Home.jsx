@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import myCV from '../assets/downloads/lauther_valladares_CV.pdf'
 import '../assets/styles/home.css'
-import {changeLanguage} from '../store/slices/translateState.slice'
+import { useTranslateStore } from "../store/store"
 
 const Home = () => {
-    const translateState = useSelector(state => state.translate);
+    const translateState = useTranslateStore(state => state.language);
     const myName = "Lauther Valladares"
     const text = "Full stack developer !"
 

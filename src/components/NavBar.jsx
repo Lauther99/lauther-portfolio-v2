@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import '../assets/styles/navbar.css'
 import '../assets/styles/bgStars.css'
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { changeLanguage } from '../store/slices/translateState.slice';
-import en from '../assets/translates/en.json'
-import es from '../assets/translates/es.json'
+// import { useDispatch, useSelector } from 'react-redux';
+// import { changeLanguage } from '../store/slices/translateState.slice';
+// import en from '../assets/translates/en.json'
+// import es from '../assets/translates/es.json'
+import { useTranslateStore } from "../store/store"
 
 const NavBar = () => {
     const [menu, setMenu] = useState('');
@@ -13,8 +14,10 @@ const NavBar = () => {
     const [darkMode, setDarkMode] = useState('darky');
     const navigate = useNavigate()
     const [language, setLanguage] = useState('english');
-    const translateState = useSelector(state => state.translate);
-    const dispatch = useDispatch();
+    const translateState = useTranslateStore(state => state.language);
+    // const dispatch = useDispatch();
+    const selectES = useTranslateStore((state) => state.selectES)
+    const selectEN = useTranslateStore((state) => state.selectEN)
 
     function toggleMenu() {
         menu === 'open-nav' ? setMenu('') : setMenu('open-nav')
@@ -28,10 +31,10 @@ const NavBar = () => {
 
     function translate() {
         if (language === 'english') {
-            dispatch(changeLanguage(es))
+            selectEN()
             setLanguage('spanish')
         } else {
-            dispatch(changeLanguage(en))
+            selectES()
             setLanguage('english')
         }
     }

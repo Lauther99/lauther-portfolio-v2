@@ -1,0 +1,88 @@
+import React from 'react';
+import ecommerceImg from '../assets/images/ecommerce1.png'
+import quotesImg from '../assets/images/quotesApp.png'
+import weatherImg from '../assets/images/weatherImg.png'
+import usersImg from '../assets/images/usersImg.png'
+import rNmImg from '../assets/images/rNmImg.png'
+import pokedexImg from '../assets/images/pokedexImg.png'
+import ecommerce2Img from '../assets/images/ecommerce2Img.png'
+import '../assets/styles/projects.css'
+import { useTranslateStore } from "../store/store"
+
+const Projects = () => {
+    const translateState = useTranslateStore(state => state.language);
+    
+    const ecommerce1Link = 'https://un-cafe.netlify.app/'
+    const quotesAppLink = 'https://quotes-app-lv.netlify.app/'
+    const weatherAppLink = 'https://weather-app-lh.netlify.app/'
+    const rickAndMortyAppLink = 'https://ricknmorty-lv.netlify.app/'
+    const usersInterfaceLink = 'https://users-list-lh.netlify.app/'
+    const pokedexAppLink = 'https://mypokedex-lv.netlify.app/#/'
+    const ecommerce2Link = 'https://react-ecommerce-lv.netlify.app/#/'
+
+    return (
+        <section id='projects'>
+            <h1>{translateState[3]?.title}</h1>
+            <article className='projects-container'>
+                <a href={ecommerce2Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerce2Img})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>E-commerce App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || Redux ||HTML || CSS || Javascript</p>
+                    </div>
+                </a>
+                <a href={pokedexAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${pokedexImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>Pokédex App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || Redux ||HTML || CSS || Javascript</p>
+                    </div>
+                </a>
+                <a href={rickAndMortyAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${rNmImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>Rick and Morty App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || Redux ||HTML || CSS || Javascript</p>
+                    </div>
+                </a>
+                <a href={weatherAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${weatherImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>Weather App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || HTML || CSS || Javascript</p>
+                    </div>
+                </a>
+                <a href={quotesAppLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${quotesImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>Quotes App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || HTML || CSS</p>
+                    </div>
+                </a>
+                {/* <a href={usersInterfaceLink} target='_blank' className='project-img' style={{ backgroundImage: `url(${usersImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>CRUD's App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>React JS || HTML || CSS || Javascript</p>
+                    </div>
+                </a> */}
+                <a href={ecommerce1Link} target='_blank' className='project-img' style={{ backgroundImage: `url(${ecommerceImg})` }}>
+                    <div className='project-info projects-animation'>
+                        <h2>E-commerce App</h2>
+                    </div>
+                    <div className='project-tech projects-animation'>
+                        <p>Vanilla Javascript || HTML || CSS</p>
+                    </div>
+                </a >
+            </article>
+        </section>
+    );
+};
+
+export default Projects;

@@ -1,12 +1,9 @@
 import React from 'react'
-import NavBar from './components/NavBar';
+// import NavBar from './components/NavBar';
 import Home from './pages/Home'
-import About from './pages/About';
-import Contact from './pages/Contact'
-import Skills from './pages/Skills';
-import Projects from './pages/Projects'
 import './App.css'
 import './assets/styles/animations.css'
+import './assets/styles/bgStars.css'
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,13 +13,13 @@ function App() {
       <div id='stars'></div>
       <div id='stars2'></div>
       <div id='stars3'></div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
+        {/* <Route path='about' element={<About />} />
         <Route path='skills' element={<Skills />} />
         <Route path='projects' element={<Projects />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='contact' element={<Contact />} /> */}
       </Routes>
     </HashRouter>
   )

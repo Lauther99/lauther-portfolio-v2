@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@100,300;400;700&display=swap');
 
 :root {
     /*========== Colors ==========*/
@@ -32,10 +32,10 @@ html {
 
 body {
     min-height: 100vh;
-    padding: 1.5rem;
-    background-color: var(--main-body-color);
+    padding: 0;
     overflow: hidden;
-    font-family: var(--body-font);
+    font-family: sans-serif;
+    background-color: var(--main-body-color);
 }
 
 body.dark{
@@ -47,10 +47,6 @@ body.dark{
     --alt-color: #6F1E51;
     --container-color-normal: #1515155e;
     --card-container: #1515155e;
-}
-
-a{
-    color: var(--text-color-normal);
 }
 
 ul,
@@ -67,21 +63,17 @@ button {
 
 h1{
     font-size: 30px;
-    color: var(--main-color);
 }
 
 h2{
     font-size: 25px;
-    color: var(--main-color);
 }
 
 h3{
     font-size: 18px;
-    color: var(--text-color-normal);
 }
 
 p{
-    color: var(--text-color-light);
     text-align: justify;
 }
 
